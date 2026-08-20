@@ -1,0 +1,57 @@
+Current EU Configurations
+
+\- name: Unleash__ApiUrl
+
+value: https://egcplwrubysvc.revionics.dev/feature/proxy
+
+\- name: Unleash__AppName
+
+value: Development
+
+\- name: Unleash__RefreshInterval
+
+value: '30'
+
+\- name: Unleash__ApiToken
+
+value: 8Hj7udSyTNZfmcs6xGfu
+
+Current US configurations
+
+\- name: Unleash__ApiUrl
+
+value: https://ngcplwrubysvc.revionics.dev/feature/proxy
+
+\- name: Unleash__AppName
+
+value: Development
+
+\- name: Unleash__RefreshInterval
+
+value: '30'
+
+\- name: Unleash__ApiToken
+
+value: 8Hj7udSyTNZfmcs6xGfu
+
+we are facing issue only for EU and not for US and the issue is
+
+Unleash.UnleashException: Unleash: Forbidden from server in 'FetchToggles': <!doctype html><meta charset="utf-8"><meta name=viewport content="width=device-width, initial-scale=1"><title>403</title>403 Forbidden    at Unleash.Communication.UnleashApiClient.HandleErrorResponse(HttpResponseMessage response, String resourceUri, Boolean shouldThrow)    at Unleash.Communication.UnleashApiClient.FetchToggles(String etag, CancellationToken cancellationToken, Boolean throwOnFail)
+
+and if i use this url i am not getting any error
+
+\- name: Unleash__ApiUrl
+
+value: https://portal-eu-ruby-dev.revionics.dev/feature/proxy
+
+\- name: Unleash__AppName
+
+value: Development
+
+\- name: Unleash__RefreshInterval
+
+value: '30'
+
+\- name: Unleash__ApiToken
+
+value: 8Hj7udSyTNZfmcs6xGfu
